@@ -63,9 +63,9 @@ var add2 = (n1:number,n2:number):number=>{
 /* 全局变量，局部变量 */
 /* 变量提升： 内部声明了和全局的变量同名时，就会出现变量提升的效果，
 声明语句会提升到作用域顶端（函数的第一句）*/
-var name:string="刘德华"
+// var name:string="刘德华"
 function changeName():void{
-    console.log(name)//undefined
+    // console.log(name)//undefined
 
     var name:string="马德华"
     console.log(name)//’马德华‘
@@ -83,6 +83,6 @@ function changeFace():void{
     console.log(facea)//"刘德华"
     /* ts编译成js，他自动给我们加了ES5的处理，ES5里是没有let关键字的，
     现在我们再改一下编译好的js文件 */
-    console.log(faceb)//"小沈阳"
+    // console.log(faceb)//"小沈阳"
 }
 changeFace()
