@@ -73,9 +73,11 @@ function changeFace() {
     var facea = "刘德华";
     {
         var faceb = "小沈阳";
-        console.log(faceb);
+        console.log(faceb); //小沈阳
     }
-    console.log(facea);
-    console.log(faceb);
+    console.log(facea); //"刘德华"
+    /* ts编译成js，他自动给我们加了ES5的处理，ES5里是没有let关键字的，
+    现在我们再改一下编译好的js文件 */
+    console.log(faceb); //"小沈阳"
 }
 changeFace();
